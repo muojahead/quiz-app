@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App | End</title>
+    <link rel="stylesheet" href="../css/app.css" />
+</head>
+
+<body>
+    <div id="end" class="flex flex-center flex-column">
+        <h1 class="text-center">Questions Finished</h1>
+        <h1>
+            Score Count :
+            <span id="finalScore"></span>
+        </h1>
+        <form>
+            <p id="msg"></p>
+            <input type="text" name="username" id="username" placeholder="Enter Name To Save Score" autocomplete="off" />
+            <button type="submit" class="btn" disabled id="saveScoreBtn" onclick="saveScore(event)">
+          Save
+        </button>
+        </form>
+        <a class="btn" href="./game.html">RePlay</a>
+        <a class="btn" href="../index.html">Home</a>
+    </div>
+    <script src="../js/end.js"></script>
+</body>
+
+</html>
